@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2057" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Answer" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="listRel" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="List" inverseName="answerRel" inverseEntity="List" syncable="YES"/>
+        <relationship name="spellingRel" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Spelling" inverseName="answerRel" inverseEntity="Spelling" syncable="YES"/>
+    </entity>
+    <entity name="Category" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="listRel" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="List" inverseName="categoryRel" inverseEntity="List" syncable="YES"/>
+    </entity>
+    <entity name="List" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="answerRel" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Answer" inverseName="listRel" inverseEntity="Answer" syncable="YES"/>
+        <relationship name="categoryRel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="listRel" inverseEntity="Category" syncable="YES"/>
+    </entity>
+    <entity name="Spelling" syncable="YES">
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="answerRel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Answer" inverseName="spellingRel" inverseEntity="Answer" syncable="YES"/>
+    </entity>
+    <entity name="Version" representedClassName="" syncable="YES">
+        <attribute name="number" attributeType="String" defaultValueString="1.0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Answer" positionX="243" positionY="126" width="128" height="90"/>
+        <element name="Category" positionX="-144" positionY="0" width="128" height="75"/>
+        <element name="List" positionX="61" positionY="63" width="128" height="88"/>
+        <element name="Spelling" positionX="439" positionY="216" width="128" height="75"/>
+        <element name="Version" positionX="-344" positionY="-67" width="128" height="58"/>
+    </elements>
+</model>

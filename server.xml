@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<QFill currentVersion="1.2">
+		<List category="Politics2" name="Presidentes de Estados Unidos">
+			<Answer id="1">Facu1</Answer>
+			<Answer id="1">Facu1</Answer>
+			<Answer id="1">Facu1</Answer>
+			<Answer id="2">Facu2</Answer>
+			<Answer id="2">Facu2</Answer>
+			<Answer id="2">Facu2</Answer>	
+		</List>
+		<List category="History2" name="Libertadores americanos">
+			<Answer id="3">Fede3</Answer>
+			<Answer id="3">Fede3</Answer>
+			<Answer id="3">Fede3</Answer>
+			<Answer id="4">Fede4</Answer>
+			<Answer id="4">Fede4</Answer>
+			<Answer id="4">Fede4</Answer>
+		</List>
+		<List category="Sport2" name="Equipos NFL">
+			<Answer id="3">Fede3</Answer>
+			<Answer id="3">Fede3</Answer>
+			<Answer id="3">Fede3</Answer>
+			<Answer id="4">Fede4</Answer>
+			<Answer id="4">Fede4</Answer>
+			<Answer id="4">Fede4</Answer>
+		</List>
+        	<List category="Ajalla2" name="Putos del Soy Ajalla">
+            		<Answer id="Facu">Facu</Answer>
+            		<Answer id="Germo">Germo</Answer>
+        	</List>
+</QFill>

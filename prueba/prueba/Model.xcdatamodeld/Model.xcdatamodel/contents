@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Answer" syncable="YES">
+        <attribute name="answer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="ownerList" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="List" inverseName="ownedAnswers" inverseEntity="List" syncable="YES"/>
+    </entity>
+    <entity name="Category" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ownedLists" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="List" inverseName="ownerCategory" inverseEntity="List" syncable="YES"/>
+    </entity>
+    <entity name="List" syncable="YES">
+        <attribute name="items" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ownedAnswers" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Answer" inverseName="ownerList" inverseEntity="Answer" syncable="YES"/>
+        <relationship name="ownerCategory" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="ownedLists" inverseEntity="Category" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="List" positionX="-254" positionY="165" width="128" height="103"/>
+        <element name="Category" positionX="-261" positionY="-3" width="128" height="73"/>
+        <element name="Answer" positionX="124" positionY="162" width="128" height="88"/>
+    </elements>
+</model>
